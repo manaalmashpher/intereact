@@ -1,0 +1,183 @@
+.main-content {
+  height: 100vh;
+  width: 100%;
+}
+
+.image-container {
+  z-index: -10;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+}
+
+.bg-image {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  background-image: url("/retro.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+}
+
+.nav-bar {
+  height: 13vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  z-index: 10;
+}
+
+.nav-logo {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.logo-img {
+  height: 100%;
+  width: 50%;
+  overflow: hidden;
+  display: flex;
+  background-image: url("/intereact-logo.png");
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position-x: left;
+  background-position-y: center;
+  margin-left: 1vw;
+}
+
+.nav-links {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.links {
+  width: 50%;
+  height: 100%;
+  font-family: "Wix Madefor Display", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: rgb(255, 255, 255);
+}
+
+.links a {
+  text-decoration: none;
+  color: rgb(69, 8, 8);
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+.main-container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 180px;
+  font-family: "Courier New", Courier, monospace;
+  letter-spacing: -1vh;
+}
+
+.trust-container {
+  height: 50%;
+  width: 50%;
+  overflow: hidden;
+  display: flex;
+  background-image: url("/trust.png");
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  opacity: 0;
+  display: block;
+  animation: reveal 1.5s cubic-bezier(0.1, 0, 0.1, 1) forwards 0.3s;
+}
+
+@keyframes reveal {
+  0% {
+    opacity: 0;
+    transform: translate(0, 70%);
+  }
+  75% {
+    opacity: 0.8;
+    transform: translate(0, 0);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* @keyframes colorchange {
+    0% {
+      fill-opacity: 0;
+    }
+    50% {
+      fill-opacity: 1;
+    }
+    100% {
+      fill-opacity: 0;
+    }
+  } */
+
+.footer-section {
+  height: 30vh;
+  width: 100%;
+  z-index: 1;
+  background-color: rgb(109, 13, 13);
+  border-top: 10px solid rgb(109, 13, 13);
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.contacts {
+  height: 25vh;
+  width: 40vw;
+  color: white;
+  margin-left: 70px;
+  margin-top: 10px;
+  font-family: "Courier New", Courier, monospace;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contact-title {
+  font-size: 25px;
+  font-weight: 900;
+}
+
+.contacts a {
+  height: auto;
+  width: fit-content;
+}
+
+.contacts a:hover {
+  text-decoration: underline;
+}
+
+.footer-logo {
+  height: 20vh;
+  width: 50vw;
+  background-image: url("/intereact-logo.png");
+  background-position-x: left;
+  background-position-y: center;
+  background-repeat: no-repeat;
+  background-size: 90%;
+}

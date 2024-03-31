@@ -1,0 +1,38 @@
+.p-container {
+  background-color: pink;
+}
+
+ul {
+  background-color: cadetblue;
+  height: 15vh;
+  width: 95vw;
+  border: 2px solid;
+  padding: 30px;
+}
+
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background-color: lightblue;
+  margin: 0;
+}
+
+.container2 {
+  font-size: 20px;
+  height: 50vh;
+  width: 50vw;
+  background-color: green;
+  border: 5px solid black;
+  padding-right: 30px;
+  margin-top: 20px;
+  background-image: url("img.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 150%;
+
+  position: relative;
+  color: white;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  /* top: 100vh;
+    right: 80px; */
+}
